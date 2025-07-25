@@ -1,0 +1,96 @@
+:root {
+    --pri-color:#f4d04e;
+    --sec-color:#ffffff;
+    --main-txt-color:#6b6b6b;
+    --main-h-color:#121212;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Figtree;
+    font-weight: 500;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-h-color) ;
+    color: var(--main-txt-color);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90rem;
+    height: 100%;
+    background-color: var(--pri-color);
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 22rem;
+    background-color: var(--sec-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-h-color);
+    box-shadow: 10px 10px var(--main-h-color);
+}
+
+h3,
+.avatar p {
+    color: var(--main-h-color);
+    font-weight: 950;
+    margin-left: 1rem;
+}
+
+h3 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    transition: 300ms ease-in-out;
+}
+
+h3:hover {
+    color: var(--pri-color);
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--main-h-color);
+    font-weight: 950;
+    font-size: 0.8rem;
+    background-color: var(--pri-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.article  .pub {
+    font-size: 0.9rem;
+    color: var(--main-h-color);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
